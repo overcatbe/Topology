@@ -235,13 +235,13 @@ Wegen $\inv{f}(B_\eps (f(x)))\seq \inv{f}(U)$ ist auch $\inv{f}(U)$ Umgebung von
 \ul{\bf Zusammenfassung}:\\ Sei (X,d) ein metrischer Raum (z.B.: $A\seq\R^p$ mit $d_{(e)}$ der euklid. Metrik)\\
 \begin{tabular}{|l|}\hline\\
 $\bullet$ $U$ Umgebung von x $:\eq$ $\exists\eps >0:B_\eps (x)\seq U\dots$\footnotemark\\
-$\bullet$ G offen : $\eq$ G ist Umgebung jedes seiner Punkte\\
+$\bullet$ G offen :Â $\eq$ G ist Umgebung jedes seiner Punkte\\
 $\bullet$ $x_\infty = \lim_{n\ra\infty}x_n :\eq \underbrace{\exists N\in\N \exists n\geq N :x_N\in U_{x_\infty}}_{(x_n)_{n\in\N } \mbox{\footnotesize ist schlie"slich in } U_{x_\infty}}$\\
 $\bullet$ $[ x_0$ ist HW von $(x_n)_{n\in\N} :\eq \forall N\in\N\exists n\geq n:x_N\in U_{x_0}$ ]\\
 $\bullet$ f stetig in x$\eq \inv{f}(U_{f(x)})$ ist Umgebung von x; {\small oder} $\inv{f}(U_{f(x)})\supseteq U_x$.\\
 \\\hline
 \end{tabular}
-\footnotetext{Sprache der metrischen R"aume (Zahlenwerte von Abst"ande)}\\
+\footnotetext{Sprache der metrischen R"aume (Zahlenwerte von Abst"anden)}\\
 
 Auch die "ubrigen Begriffe aus der anf"anglichen Liste k"onnen ohne Verwendung einer Metrik formuliert werden -\\
 \ul{\bf Ausnahmen}:\vspace*{0.3cm}\\
@@ -254,7 +254,7 @@ Wieso das ?
 \eqmit{Versuch!}\forall U$(Umgebung von $x_n$\dots{\sc hilfe!}, welches $U$?)\\
 \framebox{\sc stop!} Alle $x_n$ br"auchten eine Umgebung mit gleicher Gr"o"se - aber was hei"st ''gleich gro"s'',''kleiner'',''gr"o"ser'' bei verschiedenen $x_n,x_{n_1}$ ohne Verwendung des Radius-/Abstandsbegriffs ?[bei \ul{einem} (Mittel-)Punkt x ist dies klar: $\eps_1\leq\eps_2\dots B_{\eps_1}(x)\seq B_{\eps_2}\dots U\seq U'$]
 \item $f:X\ra Y$ \ul{gleichm"a"sig stetig}\index{Stetigkeit!gleichmassige@gleichm{\"a}{\ss}ige}:$\eq\forall\eps >0\exists\delta >0\forall x,x'\in X:\\ \hspace*{7cm}\underbrace{d_X(x,x')<\delta}_{x'\in B_\delta (x)}\impl \underbrace{d_Y(f(x),f(x'))<\eps}_{f(x')\in B_\eps f(x)}$\\
-Wiederum: ich br"auchte f"ur \ul{alle} Umgebungen von x, mit fixer, vergleichbarer Gr"o"se von Radius $\delta$ (bzw. f"ur $f(x)$ mit Radius $\eps$ ) - das geht aber nicht ohne Abstandsbegriff !
+Wiederum: ich br"auchte f"ur \ul{alle} Umgebungen von x, mit fixer, vergleichbarer Gr"o"se vom Radius $\delta$ (bzw. f"ur $f(x)$ mit Radius $\eps$ ) - das geht aber nicht ohne Abstandsbegriff !
 \end{itemize}
 Wir haben jetzt nun vom Teil $TC^2 (\mbox{ von } TC^4)$ die Spuren in der Analysis-VO aufgedeckt:
 \begin{description}
@@ -270,7 +270,7 @@ Jede stetige, reellwertige Funktion $f$ nimmt auf einem kompakten Intervall $I=[
 Dahinter steckt der topologische Satz \ref{6.5}:\\ {\it Stetige Bilder kompakter Mengen} (hier $f([a,b])$) {\it sind wiederum kompakt} , und dies hei"st in $\R$ (nach {\sc Heine-Borel})  beschr"ankt und abgeschlossen;\\ beschr"ankt $\impl f([a,b])$ hat ein endliches Supremum und ein endl. Infimum;\\ abgeschlossen$\impl$ beide geh"oren zu $f([a,b])$, sind also ein maximaler und ein minimaler Funktionswert.
 \newpage
 \item C\dots{\it {\bf c}onnectedness}\dots ''Zusammenh"angendheit''\\
- {\bf Satz:}{\sc Zwischenwertsatz}\\
+Â {\bf Satz:}{\sc Zwischenwertsatz}\\
 Nimmt eine stetige, reellwertige Funktion auf einem Intervall die Werte $c$ und $d$ mit $c<d$ an, so auch jeden Wert dazwischen.\\
 Zur Illustration zun"achst ein \ul{Gegenbeispiel} mit einer passenden \ul{unstetigen} Funktion $f:[-1,+1]\ra\R; x\mapsto\left\{\begin{array}{l r}
 x& \mbox{f"ur }-1\leq x\leq0\\
@@ -322,7 +322,7 @@ Das Paar $(X,\T)$ hei"st dann \ul{topologischer Raum} (eine Menge X mit einer To
 $\impl\exists i_0: x\in G_{i_0}\impl \exists\eps >0:B_\eps (x)\seq G_{i_0}\seq\bigcup_{i\in I}G_i\impl\bigcup_{i\in I} G_i$ offen
 \item[(O3)] $G_1\dots G_n$ offen; und $x\in \bigcap_{i=1}^n G_i \impl\forall i\in \{ 1,\dots ,n\} :x\in G_i\impl$\\$\impl\exists\eps_1\dots\eps_n :B_{\eps_i}(x)\seq G_i\impl \eps ':=\min\{ \eps_1,\dots \eps_n\}\impl$\\$\impl B_{\eps '}(x)\seq\bigcap_{i=1}^n G_i\impl\bigcap_{i=1}^n G_i$ offen
 }
-\item Spezialfall von 1.: $(A,d)$ mit $A\seq\R^n, d_{eukl}$ bzw. jede Teilmenge eines normierten VR's $(V, \norm{\_})$ und $d(x,y):=\norm{x-y}$ (\ref{1.3}).
+\item Spezialfall von 1.: $(A,d)$ mit $A\seq\R^n, d_{eukl}$ bzw. jede Teilmenge eines normierten VR's $(V,Â \norm{\_})$ und $d(x,y):=\norm{x-y}$ (\ref{1.3}).
 \item diskrete Topologie von X: $\T_{diskr} =2^X$ jede Teilmenge von X\index{diskrete Topologie}\index{Topologie!diskrete}\\
 ''Klumpentopologie''/triviale Topologie von X: $\T_{kl} = \{ \emptyset ,X\}$\index{Klumpentopologie}\index{Topologie!Klumpen-}\\
 O1-O3\dots klar
@@ -333,7 +333,7 @@ O1-O3\dots klar
 \begin{bem}\label{2.4}{Vergleich von Topologien (mit ''$\seq$'')}\\
 z.B $\T_{kl}\seq\T\seq\T_{diskr}$\\
 \indent $\T_1\seq\T_2$\dots $\T_1$ ist gr"ober als $\T_2$; $\T_2$ ist feiner als $\T_1$\\
-Die feinere Topologie hat  \ul{mehr} offene Teilmengen,\\
+Die feinere Topologie hat Â \ul{mehr} offene Teilmengen,\\
 daf"ur aber \ul{kleinere} offene Mengen (i.A.) als die gr"obere.
 \end{bem}
 
@@ -399,7 +399,7 @@ Sei X eine Menge und f"ur jedes $x\in X$ sei ein nichtleeres Mengensystem $\umg{
 $$\xymatrix{\T (O1)-(O3) \ar@{=>}@/^3pc/[r]^{\ref{2.5},\ref{2.8}}&\umg{U}{x}^\T (U1)-(U4) \ar@{=>}@/^3pc/[l]^{bij,\ref{2.10}}}$$\vspace*{-1.5cm}
 \beweis{
 \item[(O1)] $\leer\in\T :\surd$ , da $\forall x\in\leer\dots$\\
-$\forall x\in X\exists  U\in\umg{V}{x}\implmit{U3} X\in\umg{V}{x}\impl X\in\T$
+$\forall x\in X\exists Â U\in\umg{V}{x}\implmit{U3} X\in\umg{V}{x}\impl X\in\T$
 \item[(O2)] Sei $(G_i)_{i\in I}\in\T$ und sei $x\in\bigcup_{i\in I}G_i\impl\exists i_0\in I: x\in G_{i_0}\implmit{Def.v.\T} G_{i_0}\in\umg{V}{x}\implmit{(U3)}\bigcup_{i\in I} G_i\in\umg{V}{x}\impl\bigcup_{i\in I}G_i\in\T$.
 \item[(O3)] Seien $G_1\dots G_n\in\T$ und sei\footnote{o.B.d.A $\bigcap_{i=1}^n G_i \neq\leer$- wenn doch dann ist $\leer\in\T$(per Def.)- also nichts zu zeigen} $x\in\bigcap_{i=1}^n G_i\in\T\impl\forall 1\leq i\leq n:x\in G_i\impl \forall 1\leq i\leq n: G_i\in\umg{V}{x}\implmit{U2,Induktion}\bigcap_{i=1}^n G_i \in\umg{V}{x}\impl \bigcap_{i=1}^n G_i \in\T$
 \item[($\umg{U}{x}^\T=\umg{V}{x}$)] D.h. sei $U\seq\umg{U}{x}^\T\implmit{\ref{2.5}}\exists G\in\T:x\in G\seq U(\seq \T)\implmit{Def.v.\T}\\
@@ -518,7 +518,7 @@ Sei (X,$\T$) ein topologischer Raum, und $\B$ eine Basis f"ur $\T$ Dann gilt:
 \item[(B3)] $\forall B_1,B_2\in\B \forall x\in B_1\cap B_2\exists B_3\in\B :x\in B_3\seq B_1\cap B_2$
 \end{description}
 \beweis{
-\item[(B1)] $X \in\T\impl X=\bigcup_{i\in I}B_i\seq\bigcup_{B\in\B}B=X$
+\item[(B1)] $XÂ \in\T\impl X=\bigcup_{i\in I}B_i\seq\bigcup_{B\in\B}B=X$
 \item[(B3)] $B_1,B_2\in\B, x\in B_1\cap B_2\implmit{(O3)}B_1\cap B_2 \mbox{offen}\\
 \implmit{\ref{2.16}}\exists B_3\in\B :x\in B_3\seq B_1\cap B_2$
 }
@@ -580,7 +580,7 @@ Ist I endlich:\\
 typischerweise so: $Y_1\times\dots\times Y_n$ $(Y_i\in\T_i)$\\
 also n-dimensionale Quader/Intervalle\\
 Sei I unendlich: dann sind es Intervalle $\prod_{i\in I}Y_i$\\
-bei denen  \ul{endlich} viele $i$ das $Y_i$ von $X_i$ verschieden ist,\\
+bei denen Â \ul{endlich} viele $i$ das $Y_i$ von $X_i$ verschieden ist,\\
  f"ur alle anderen (= ''fast alle'') ist $Y_i=X_i$\\
 z.B: Folgenr"aume $\R^\N$ diese ''Quader'' sind\\
 f"ur $|I|$\footnote{Kardinalit"at}$ =\aleph_0$ sehr ''gro"s''.\\
@@ -679,8 +679,8 @@ $\inn{B}=\ext{B} =\leer\quad \bd{B}=\R$
 Inneres und "Au"seres sind offen , der Rand ist abgeschlossen
 \beweis{
 \item[$\bullet$]Sei $x\in \inn{A}\impl \exists U\in\umg{U}{x}: U\seq A\\
-\hspace*{3cm} \implmit{(U4)}\exists V \in\umg{U}{x}:\forall y\in V:U\in\umg{U}{y};U\seq A\\
-\hspace*{3cm}\implmit{\ref{2.27}}  \forall y\in V: y\in \inn{A}\\
+\hspace*{3cm} \implmit{(U4)}\exists VÂ \in\umg{U}{x}:\forall y\in V:U\in\umg{U}{y};U\seq A\\
+\hspace*{3cm}\implmit{\ref{2.27}} Â \forall y\in V: y\in \inn{A}\\
 \hspace*{4cm} \mbox{d.h. } V\seq \inn{A} \impl \inn{A} \mbox{ist Umgebung von x} \eq \inn{A}\in\umg{U}{x}\\
 \hspace*{6cm}\impl \inn{A}$ ist offen
 \item[$\bullet$] $\ext{A} \gleichmit{\ref{2.28}ii}\mbox{int}(A^c)$ und das ist offen
@@ -691,7 +691,7 @@ Inneres und "Au"seres sind offen , der Rand ist abgeschlossen
 \begin{prop}\label{2.31}
 $\inn{A}$ ist die $\framebox{gr"o"ste }^\alpha\framebox{ in A enthaltene }^\beta \framebox{ offene }^\gamma$  Menge d.h. $\inn{A}$ ist eindeutig bestimmt durch diese Eigenschaften\vspace*{-0.2cm}
 \begin{description}
-\item[$\alpha$] $\forall G\seq A\et G $ offen $\impl G\seq\inn{A}$ 
+\item[$\alpha$] $\forall G\seq A\et GÂ $ offen $\impl G\seq\inn{A}$ 
 \item[$\beta$] $\inn{A}\seq A$\vspace*{-0.2cm}
 \item[$\gamma$] $\inn{A}$ ist offen\vspace*{-0.2cm}
 \end{description}
@@ -726,8 +726,8 @@ H\seq A
 \forall x\in X: X\in\umg{U}{x} \et X\seq X\impl x\in\inn{X} \implmit{\ref{2.30}}\inn{X}=X$
 \item[(ii)] \ref{2.28}i.
 \item[(iii)] $A\seq B\et x\in\inn{A}\impl\exists U\in\umg{U}{x}: x\in U\seq A\seq B\impl x\in \inn{B}$
-\item[(iv)] $A\cap B\seq A, A\cap B \seq B\implmit{iii.} \inn{(A \cap B)}\seq \inn{A} , \inn{(A \cap B)}\seq \inn{B} \impl \inn{(A \cap B)}\seq \inn{A}\cap\inn{B}\\
-O3,\ref{2.30} : \inn{A} \cap \inn{B} \mbox{ offen } \implmit{ii.} \inn{A} \cap \inn{B} \seq A\cap B\implmit{\ref{2.31}\gamma} \inn{A}\cap\inn{B}\seq \inn{(A \cap B)}$
+\item[(iv)] $A\cap B\seq A, A\cap B \seq B\implmit{iii.} \inn{(AÂ \cap B)}\seq \inn{A} , \inn{(AÂ \cap B)}\seq \inn{B} \impl \inn{(AÂ \cap B)}\seq \inn{A}\cap\inn{B}\\
+O3,\ref{2.30} : \inn{A} \cap \inn{B} \mbox{ offen } \implmit{ii.} \inn{A} \cap \inn{B} \seq A\cap B\implmit{\ref{2.31}\gamma} \inn{A}\cap\inn{B}\seq \inn{(AÂ \cap B)}$
 \item[(vi)] $A$ offen $\implmit{\ref{2.31}}A=\inn{A}; A=\inn{A}\implmit{\ref{2.30}} A$ offen
 \item[(v)] $\inn{A}$ offen \ref{2.30} $\implmit{vi} A^{\circ\circ}=\inn{A}$
 }
@@ -746,7 +746,7 @@ x\in \ol{A} \mbox{\dots \ul{Ber"uhrpunkt}\footnotemark}$$\footnotetext{engl.: ad
 \item $A\seq \ol{A}$: denn $A\cap A^c=\leer \impl A\cap \ext{A}=\leer \impl A\seq \ol{A}$
 \item $\ol{A} = A^{coc}$: da $\ol{A}=(\ext{A})^c=(\mbox{int}(A^c))^c=(\inn{(A^c )} )^c=A^{coc}$
 \item $\ol{A}$ ist die kleinste abgeschlossene Menge die A enth"alt: denn nach \ref{2.31} gilt: $A^{co}$ ist die gr"o"ste offene Menge, die in $A^c$ enthalten ist. $\impl A^{coc}$ ist die kleinste abgeschlossene Menge, die $A^{cc}=A$ enth"alt.
-\item $x\in\ol{A}\eq\forall U \in\umg{U}{x}:A \cap U\neq \leer$: denn $x\in\ol{A}\eq x\notin\ext{A}\eqmit{\ref{2.27}}\forall U\in\umg{U}{x}:A\cap U\neq \leer$
+\item $x\in\ol{A}\eq\forall U \in\umg{U}{x}:AÂ \cap U\neq \leer$: denn $x\in\ol{A}\eq x\notin\ext{A}\eqmit{\ref{2.27}}\forall U\in\umg{U}{x}:A\cap U\neq \leer$
 \item $\ol{A}=A\cup\bd{A}$: denn $\ol{A}=\inn{A}\cup\bd{A} \seq A\cup\bd{A}\stackrel{(ii)}{\seq}\ol{A}\cup\bd{A}=\ol{A}$
 \item $\ol{A}\cap\ol{A^c}=\bd{A}$ denn $ \ol{A}\cap\ol{A^c}=A^{coc}\cap A^{ccoc}=(A^{co}\cup \inn{A})^c=(\ext{A}\cup\inn{A})^c=\bd{A}$
 \end{enumerate}
@@ -774,7 +774,7 @@ $\{ x\}$ ist abgeschlossen, da $(-\infty , x)\cup (x, +\infty)\dots$ offen\\
 $\N$ ist offen, da $(-\infty , 1)\cup (1,2)\cup (2,3)\dots \dots$ offen\\
 $\Z$ (analog) auch abgeschlossen\\
 $\implmit{\ref{2.35}vi} \ol{\{ x\}}=\{ x\} , \ol{\N}=\N , \ol{\Z}=\Z$\\
-$\ol{\Q}= \R$, denn $\ol{\Q} =(\ext{\Q})^c\gleichmit{\ref{2.29}} \leer^c =X=\R$\\
+$\ol{\Q}=Â \R$, denn $\ol{\Q} =(\ext{\Q})^c\gleichmit{\ref{2.29}} \leer^c =X=\R$\\
 $\ol{\R\setminus \Q}=\R$, denn $\ol{\R\setminus\Q}=\Q^{\circ c}\gleichmit{\ref{2.29}}\leer^c=X=\R$
 \item $(X,d)$ metrischer Raum, $x\in X,\eps >0$\\
 Sei $S_\eps (x):=\{ y\in X|d(x,y)=\eps\}\dots$Sph"are\\
@@ -794,7 +794,7 @@ Achtung dies gilt nicht in jedem metr. Raum z.B. $(X,d_{diskr}):\\
 
 Wir haben in (\ref{2.34}iii) gezeigt, dass $\ol{A}$ die kleinste abgeschlossene Menge ist, die A enth"alt; d.h. A ist eindeutig bestimmt durch:
 \begin{equation}
-\ol{A} \supseteq A; A\mbox{ ist abgeschlossen}; \forall B\in X: B\supseteq A\et B \mbox{ abgeschlossen } \impl B\supseteq\ol{A}\label{star2}
+\ol{A} \supseteq A; A\mbox{ ist abgeschlossen}; \forall B\in X:Â B\supseteq A\et B \mbox{ abgeschlossen } \impl B\supseteq\ol{A}\label{star2}
 \end{equation}
 
 \begin{definition}\label{2.37}{Abschlussoperator $\closure$}\index{Topologie!Abschlussoperator}\index{Abschlussoperator}\\
